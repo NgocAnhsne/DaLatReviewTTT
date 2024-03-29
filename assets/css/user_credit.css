@@ -1,19 +1,93 @@
-.user__credit--banner {
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color:  var( --color-text-6);;
-    display: flex;
-    flex-direction: column;
-    height: 290px;
-    justify-content: center;
-    padding: 20px 120px;
+
+.user__mb--gift__card {
+    padding-top: 46px;
+}
+.user__mb--credit__banner__container {
+    
     position: relative;
-    text-align: center;
+    z-index: 0;
+    /* height: 0;
+    overflow: hidden;
+    padding-bottom: 58.6667%;
     width: 100%;
-    background-image: url(../img/user_credit.png);
+    background-size: cover;
+    
+    background-image: url(https://res.klook.com/image/upload/v1646622198/banner/q45xmuvkmscuqk3furhm.jpg); */
 }
 
+.user__mb--credit__banner__container .content{
+    position: absolute;
+    top: 0;
+}
+
+
+.user__mb--credit__banner__container::after{    
+    background: linear-gradient(180deg, hsla(0, 0%, 96%, 0), #f5f5f5);
+    bottom: 0;
+    content: "";
+    height: 29px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+}
+.user__mb--credit__banner__container .title{
+    -webkit-box-orient: vertical;
+    color: var(--color-text-6);
+    font-size: var(  --size-text-15);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    margin: 15px 0 0 16px;
+    max-height: 84px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 4px 8px rgba(0,0,0,.25);
+}
+.user__mb--credit__banner__container .button{
+    background-color: var(--color-background-6);
+    margin: 4px 0 0 16px;
+    border-radius: var( --border-radius-size-1);
+    font-size: var(  --size-text-3);
+    line-height: 16px;
+    min-width: 72px;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    font-weight:600;
+    color:var(--color-text-7);
+}
+
+
+
+/*  */
+
+.user__credit--banner {
+    /* 
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-direction: column;
+    height: 290px;
+    padding: 20px 120px;
+    position: relative;
+    width: 100%; */
+    /* background-image: url(../img/user_credit.png); */
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color:  var( --color-text-6);
+}
+.user__mb--credit__banner__container img{
+    width: 100%;
+    height: 100%;
+   
+}
+.user__credit--banner .content{
+    z-index: 1;
+    position: absolute;
+}
 .user__credit--number {
     font-size: var(--size-text-13);
     font-weight: 600;
@@ -27,6 +101,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 .user__credit--history__box {
     margin-top: 20px;
