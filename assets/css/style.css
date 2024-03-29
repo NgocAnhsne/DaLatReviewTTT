@@ -402,12 +402,11 @@ body.active .primary__dropdown--content{
   margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: flex-start;
 }
 .firstProduct__content--list__item{
   width: 23%;
-  margin: 10px;
+  margin: 1%;
 }
 .firstProduct__content--list__item--wrap{
   border-radius: var(--border-radius-size-4);
@@ -455,9 +454,9 @@ min-height: 190px;
   -webkit-box-orient: vertical;
   font-size: var(--size-text-5);
 }
-.firstProduct__info--top__title a{
+.firstProduct__info--top__title p{
+  display: block;
   color: var(--color-text-1);
-  line-height: 5px;
   font-weight: 600;
   /* font-style: 15px; */
 }
