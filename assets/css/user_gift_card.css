@@ -5,12 +5,20 @@
     margin-bottom: 20px;
 }
 .user__gift--card__banner--container{
-    background-size: cover;
-    height: 220px;
-    overflow: hidden;
-    max-width: 866px;
-    background-image: url(../img/user_gift_card_banner.jpg);
+    min-height: 210px;
+    position: relative;
+    display: flex;
 }
+.user__gift--card__banner--container img{
+    max-width: 100%;
+    border-top-left-radius:var( --border-radius-size-1) ;
+    border-top-right-radius: var( --border-radius-size-1);
+background-size: cover;
+}
+.user__gift--card__banner--container .content{
+    position: absolute;
+}
+
 .user__gift--card__banner--title{
     color: var(--color-text-6);
     font-size: var(  --size-text-14);
@@ -63,8 +71,9 @@
     min-height: 72px;
     min-width: 90px;
 }
-.user__benefit--icon1{
-    background-image: url(../img/user_gif-benefit_1.png);
+.user__benefit--icon{
+    background-size: cover;
+   max-width: 90px;
 }
 .user__gift--card__benefit--content{
     height: 100%;
@@ -85,15 +94,7 @@
     margin-top: 8px;
     
 }
-.user__benefit--icon2{
-    background-image: url(../img/user_gif-benefit_2.png);
-}
-.user__benefit--icon3{
-    background-image: url(../img/user_gif-benefit_3.png);
-}
-.user__benefit--icon4{
-    background-image: url(../img/user_gif-benefit_4.png);
-}
+
 
 
 /* banner share with people */
@@ -137,10 +138,11 @@
   
 }
 /* ảnh items */
-.user__family1{background-image: url(../img/user_another_ps1.jpg);}
-.user__family2{background-image: url(../img/user_another_ps2.jpg);}
-.user__family3{background-image: url(../img/user_another_ps3.jpg);}
-
+.user__family{
+   min-height: 160px;
+   width: 100%;
+   background-size: cover;
+}
 
 
 /* banner explore the next trip */
@@ -162,29 +164,21 @@
     display: flex;
     justify-content: space-between;
 }
-.adv__img--container .adv__img--item .image{
+.adv__img--container .adv__img--item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.adv__img--container .adv__img--item .desc{
+    padding: 10px;
+}
+.adv__img--container .adv__img--item img{
     background-size: cover;
     height: 72px;
     margin: 0 auto;
     width: 72px;
+}
 
-}
-/* img items */
-.user__gift--card__explore--img1{
-    background-image: url(../img/user_explore1.png);
-}
-.user__gift--card__explore--img2{
-    background-image: url(../img/user_explore2.png);
-}
-.user__gift--card__explore--img3{
-    background-image: url(../img/user_explore3.png);
-}
-.user__gift--card__explore--img4{
-    background-image: url(../img/user_explore4.png);
-}
-.user__gift--card__explore--img5{
-    background-image: url(../img/user_explore5.png);
-}
 
 /* Banner điền mã quà tặng */
 .user__gift--card__redeem--container{
@@ -275,15 +269,11 @@
     width: 3px;
 }
 .user__gift--card__redeem--right{
-
+    max-width: 30%;
 }
-.user__gift--card__img--input{
-    background-image: url(../img/user_gift_card_input.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 166px;
+.user__gift--card__redeem--right img{
     width: 100%;
+    background-size: cover;
 }
 
 /* banner điều khoản */
@@ -307,22 +297,23 @@
 .user__mb--gift__card {
     padding-top: 46px;
 }
+
 .user__mb--gift__card--banner__container {
-    background-repeat: no-repeat;
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 58.6667%;
+    min-height: 210px;
     position: relative;
+    display: flex;
+}
+.user__mb--gift__card--banner__container img{
     width: 100%;
     background-size: cover;
-    z-index: 0;
-    background-image: url(https://res.klook.com/image/upload/v1646622198/banner/q45xmuvkmscuqk3furhm.jpg);
+}
+
+.user__mb--gift__card--banner__container .content{
+    position: absolute;
 }
 
 
-
-
-.user__mb--gift__card--banner__container ::after{    
+.user__mb--gift__card--banner__container::after{    
     background: linear-gradient(180deg, hsla(0, 0%, 96%, 0), #f5f5f5);
     bottom: 0;
     content: "";
@@ -562,7 +553,7 @@
 }
 .user__mb--gift__card--buynow .card__buynow--container .buy_btn{
     background: var(--color-background-7);
-    border-radius: var( --border-radius-size-0);
+    border-radius: var( --border-radius-size-1);
     color: var(--color-text-6);
     display: inline-block;
     line-height: 20px;
