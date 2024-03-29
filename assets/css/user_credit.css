@@ -6,13 +6,7 @@
     
     position: relative;
     z-index: 0;
-    /* height: 0;
-    overflow: hidden;
-    padding-bottom: 58.6667%;
-    width: 100%;
-    background-size: cover;
-    
-    background-image: url(https://res.klook.com/image/upload/v1646622198/banner/q45xmuvkmscuqk3furhm.jpg); */
+   
 }
 
 .user__mb--credit__banner__container .content{
@@ -33,7 +27,7 @@
 
 }
 .user__mb--credit__banner__container .title{
-    -webkit-box-orient: vertical;
+   
     color: var(--color-text-6);
     font-size: var(  --size-text-15);
     font-style: normal;
@@ -63,15 +57,6 @@
 /*  */
 
 .user__credit--banner {
-    /* 
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex-direction: column;
-    height: 290px;
-    padding: 20px 120px;
-    position: relative;
-    width: 100%; */
-    /* background-image: url(../img/user_credit.png); */
     position: relative;
     justify-content: center;
     text-align: center;
