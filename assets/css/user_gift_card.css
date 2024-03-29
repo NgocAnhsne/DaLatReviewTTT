@@ -314,11 +314,14 @@
     padding-bottom: 58.6667%;
     position: relative;
     width: 100%;
-    
     background-size: cover;
     z-index: 0;
     background-image: url(https://res.klook.com/image/upload/v1646622198/banner/q45xmuvkmscuqk3furhm.jpg);
 }
+
+
+
+
 .user__mb--gift__card--banner__container ::after{    
     background: linear-gradient(180deg, hsla(0, 0%, 96%, 0), #f5f5f5);
     bottom: 0;
